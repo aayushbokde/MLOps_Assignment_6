@@ -1,6 +1,7 @@
 import json
+import sys, os 
 from main import app
-
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 def test_predict_route():
     tester = app.test_client()
