@@ -1,6 +1,7 @@
 import json
 from main import app
 
+
 def test_predict_route():
     tester = app.test_client()
     response = tester.post(
